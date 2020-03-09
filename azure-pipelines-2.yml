@@ -15,7 +15,7 @@ variables:
   imageRepository: 'devopsnetcorek8stest'
   containerRegistry: 'azdevops.azurecr.io'
   dockerfilePath: '**/Dockerfile'
-  tag: '$(Build.Number)'
+  tag: '$(Build.BuildNumber)'
   imagePullSecret: 'azdevops1037650a-auth'
 
   # Agent VM image name
