@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: netcoreforazdevops 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: netcoreforazdevops 
+    spec:
+      containers:
+        - name: netcoreforazdevops 
+          image: azdevops.azurecr.io/netcoreforazdevops
+          ports:
+          - containerPort: 80
